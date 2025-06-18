@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% if page.section == "Governance library" %}
+  {% assign sectionURL = 'governance-library' %}
+{% elsif page.section == "Reports and guidance" %}
+  {% assign sectionURL = 'reports-and-legislation' %}
+{% else %}
+  {% assign sectionURL = 'resources-library' %}
+{% endif %}
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="/">Home</a> &nbsp;&gt;&nbsp; <a href="/{{sectionURL}}/">{{page.section}}</a> &nbsp;&gt;&nbsp; {{page.title}}
+  </div>
+</div>
+<div class="content">
+<div class="container">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+
+  <!-- LINKS -->
+  {% comment %} Only include files where page = this current page {% endcomment %}
+  {% assign files = site.data.files | where: "page", page.title | sort: "title"  %}
+
+  {% comment %} Extract list of all blocks for this current page {% endcomment %}
+  {% assign blocks = files | map: "block" | uniq  %}
+
+  {% for block in blocks %}
+  <h3>{{ block }}</h3>
+
+    {% comment %} Display links for this block {% endcomment %}
+    {% include cardspage.html %}
+
+  {% endfor %}
+ 
+
+</div>
+</div>

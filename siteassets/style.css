@@ -1,0 +1,173 @@
+body       {font-family: Lato, Helvetica, Arial, sans-serif; color: #333333; background-color: #e4e4e4;}
+.content   {background-color: #efefef; padding: 1.5em 0 2.5em;}
+h1         {font-family: Arvo; font-size: 36px; color: #18194f}
+h2         {font-family: Arvo; font-size: 24px; color: #18194f}
+h3         {font-family: Arvo; font-size: 20px; color: #18194f}
+.center    {text-align: center;}
+
+a                      {color: #b32b76}
+a:hover                { color: blue}
+
+/* links in cards & search table & cookies link in footer */
+.stretched-link        {color: #18194f}
+.stretched-link:hover  {color: #b32b76; text-decoration: none}
+
+.breadcrumbs a         {color: #18194f}
+.breadcrumbs a:hover   {color: #b32b76; text-decoration: none} 
+
+.cookies a            {color: #18194f}
+.cookies a:hover      {color: #b32b76; text-decoration: none} 
+
+/* NAV */
+.navwrap                                   {background-color: #fff;}
+.navbar                                    {padding-left: 0; background-color: #fff;}
+.navbar-light .navbar-brand                {font-family: Arvo; font-size: 24px; font-weight: bold; color: #18194f; line-height: 100%}
+.navbar-light .navbar-nav .nav-link        {font-family: Arvo; font-size: 18px; color: #18194f; line-height: 1.1}
+.navbar-light .navbar-nav .nav-link:hover  {color: #b32b76}
+.navbar-expand-lg .navbar-nav .nav-link    {padding-right: 1rem;}
+.navbar-brand {white-space: wrap;}
+
+.breadcrumbs   {background-color: #e4e4e4; padding: 9px 0; font-size: 85%}
+
+/* FOOTER */
+.footer        {background-color: #e4e4e4; padding: 3em 0 1em;}
+.footer h2     {margin-bottom: 0}
+.footer .strap {font-style: italic;}
+.logos         {padding-top: 3em}
+.logos img     {max-height: 90px; padding: 0 50px}
+.cookies       {padding-top: 2em; text-align: right; font-size: 90%; font-style: italic}
+  
+
+/* HOME */
+.banner     {position: relative; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: cover;
+	         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/siteassets/communitiesMural.jpg');
+			 display: flex; flex-direction: column; justify-content: center;}
+.banner h1  {font-family: Arvo; font-size: 48px; font-weight: 700; color: #fff; }
+.banner p   {font-family: Arvo; font-size: 22px; color: #fff}
+#home .breadcrumbs {display: none;}
+
+.intro      {padding-top: 1.5em}
+.intro p    {font-family: Arvo; font-size: 24px; line-height: 36px; color: #18194f}
+.hilight    {color: #b32b76}
+
+.background {background-color: #efefef;}
+
+/* PAGES */
+.checklist ol li     {padding-bottom: 8px}
+.checklist ul li     {padding-bottom: 4px}
+.btn-download        {background-color: #18194f; color: white}
+.btn-download:hover  {background-color: #b32b76; color: white}
+.btn-download i      {padding-left: 0.75em}
+
+#DataTable i         {padding-left: 0.5em}
+tr                   {position: relative;}  /*for stretched links in results table */
+#DataTable th        {background-color: #e4e4e4}
+#DataTable_filter    {text-align: left; margin-top: 1.5em}
+.sticky              {display:inline; white-space: nowrap;}
+
+/* CARDS */
+.card           {border: none; border-radius: 0}
+.city i         {padding-left: 5px;}
+.card-title     {font-family: Arvo; font-size: 24px; color: #18194f; text-align: left}
+.card-text      {text-align: left; font-size: 100%}
+.card-img-top   {max-height: 140px; width:auto; object-fit: cover; border-top-left-radius: 0; border-top-right-radius: 0}
+.card-body      {padding-bottom: 0.5rem; padding-bottom: 40px}
+.card-footer    {padding-top: 0; background-color: inherit; border-top: 0}
+
+.home               {min-height: 200px;}
+.card-title         {margin-bottom: 3px}
+.home .card-img     {/*height:100%; */object-fit: cover; border-radius: 0;}
+.card-date          {font-size: 90%; font-style: italic; color: #666}
+.card i             {position: absolute; bottom: 10px; right: 10px;}
+
+.section             {min-height: 200px;}
+.card-img-top        {height: 10px; object-fit: cover; border-radius: 0; }
+.section .card-title {font-size: 20px; line-height: 1.2}
+
+.page                {min-height: 140px;}
+.page .card-body     {padding-bottom: 0}
+.page i              {font-size: 1.5em}
+.card-footer         {text-align: right; border-radius: 0; padding: 0 50px 6px;}
+.card-footer:last-child {border-radius: 0}
+.card a:hover        {text-decoration: none}
+
+
+@media (min-width: 992px) { 
+.navbar-brand {max-width: 250px}
+ }
+
+
+
+
+
+
+/* cookie alert */
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.cookiealert button {
+    margin-left: 15px;
+    vertical-align: baseline;
+}
+
+
+
+/*
+ * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ Need to include /vendor/fontawesome-5.8.1.min.css too
+ */
+@font-face {
+ font-family: 'Font Awesome 5 Free';
+ font-style: normal;
+ font-weight: 400;
+ font-display: auto;
+ src: url("../vendor/fa-regular-400.eot");
+ src: url("../vendor/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-regular-400.woff2") format("woff2"), url("../vendor/fa-regular-400.woff") format("woff"), url("../vendor/fa-regular-400.ttf") format("truetype"), url("../vendor/fa-regular-400.svg#fontawesome") format("svg"); }
+.far {
+ font-family: 'Font Awesome 5 Free';
+ font-weight: 400; }
+
+@font-face {
+ font-family: 'Font Awesome 5 Free';
+ font-style: normal;
+ font-weight: 900;
+ font-display: auto;
+ src: url("../vendor/fa-solid-900.eot");
+ src: url("../vendor/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-solid-900.woff2") format("woff2"), url("../vendor/fa-solid-900.woff") format("woff"), url("../vendor/fa-solid-900.ttf") format("truetype"), url("../vendor/fa-solid-900.svg#fontawesome") format("svg"); }
+.fa,
+.fas {
+ font-family: 'Font Awesome 5 Free';
+ font-weight: 900; }
+
+@font-face {
+ font-family: 'Font Awesome 5 Brands';
+ font-style: normal;
+ font-weight: normal;
+ font-display: auto;
+ src: url("../vendor/fa-brands-400.eot");
+ src: url("../vendor/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-brands-400.woff2") format("woff2"), url("../vendor/fa-brands-400.woff") format("woff"), url("../vendor/fa-brands-400.ttf") format("truetype"), url("../vendor/fa-brands-400.svg#fontawesome") format("svg"); }
+.fab {
+ font-family: 'Font Awesome 5 Brands'; }

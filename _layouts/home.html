@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body id="home">
+{% include nav.html %}
+
+<!-- Page Header -->
+<header class="banner">
+    <div class="container center">
+        <h1>Anti-Slavery Partnership Toolkit</h1>
+        <p>Assisting frontline practitioners and service-providers to work in partnership</p>
+    </div>
+</header>
+
+<div class="background">
+    <!-- Intro -->
+    <div class="container intro">
+    {{ content }}
+    </div>
+
+
+    <!-- Cards -->
+    <div class="container">
+    {% assign cards = site.data.homecards %}
+    {% include cardshome.html %}
+    </div>
+</div>
+
+{% include footer.html %}
+</body>
+</html>

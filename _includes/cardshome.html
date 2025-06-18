@@ -1,0 +1,22 @@
+
+<div class="row">
+  {% for card in cards %}
+  <div class="col-lg-6 col-md-12 col-sm-12 pb-4" >
+    <div class="card home" >
+      <div class="row no-gutters">
+        <div class="col-4">
+          <img src="/siteassets/{{ card.image }}" class="card-img" alt="image">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.blurb }}</p>
+          </div>
+        </div>
+      </div>
+      <a href="{{ card.link }}" class="stretched-link"> <i class="fas fa-chevron-circle-right fa-2x"></i>  </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+

@@ -1,0 +1,13 @@
+# Site settings
+title: "Anti-Slavery Partnership Toolkit"
+baseurl: "" # the subpath of your site, e.g. /blog
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+port: 			  4129
+
+# Build settings
+#markdown: kramdown
+exclude: ["README.md"]
+permalink: pretty
+
+#source "https://rubygems.org"
+#gem "github-pages", group: :jekyll_plugins
