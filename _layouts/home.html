@@ -13,16 +13,27 @@
     </div>
 </header>
 
-<div class="background">
-    <!-- Intro -->
-    <div class="container intro">
-    {{ content }}
+<div class="background intro">
+    <!-- Intro + Checklist-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 pb-4 introtext" >
+        {{ content }}
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 pb-4" >
+        {% assign cards = site.data.checklistcard %}
+        {% include cardschecklist.html %}
+        </div>
+      </div>
     </div>
 
-
+    <!-- Toolkit cards -->
+    <div class="container introtext">
+    <p>{{ page.explore }}</p>
+    </div>
     <!-- Cards -->
     <div class="container">
-    {% assign cards = site.data.homecards %}
+    {% assign cards = site.data.homecards2 %}
     {% include cardshome.html %}
     </div>
 </div>

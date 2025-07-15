@@ -1,7 +1,7 @@
 ---
 layout: simple
 title: "Search"
-nav: "yes"
+nav: "no"
 sortTitle: "zzzSearch"
 navTitle: "Search"
 customcss:

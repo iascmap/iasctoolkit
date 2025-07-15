@@ -3,7 +3,7 @@ layout: simple
 title: "Partnerships checklist"
 nav: "yes"
 sortTitle: "Checklist"
-navTitle: "Partnerships checklist"
+navTitle: "Checklist"
 ---
 
 # Partnerships checklist

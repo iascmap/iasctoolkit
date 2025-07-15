@@ -16,6 +16,7 @@
             {% for page in pages %}
             <li class="nav-item"><a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.navTitle }}</a></li>
             {% endfor %}
+            <li class="nav-item"><a class="nav-link" href="{{ "/search/" | prepend: site.baseurl }}"><i class="fas fa-search"></i></a></li>
           </ul>
         </div>
 

@@ -21,10 +21,10 @@ a:hover                { color: blue}
 /* NAV */
 .navwrap                                   {background-color: #fff;}
 .navbar                                    {padding-left: 0; background-color: #fff;}
-.navbar-light .navbar-brand                {font-family: Arvo; font-size: 24px; font-weight: bold; color: #18194f; line-height: 100%}
+.navbar-light .navbar-brand                {font-family: Arvo; font-size: 22px; font-weight: bold; color: #18194f; line-height: 100%; padding-right: 1em; max-width: 270px}
 .navbar-light .navbar-nav .nav-link        {font-family: Arvo; font-size: 18px; color: #18194f; line-height: 1.1}
 .navbar-light .navbar-nav .nav-link:hover  {color: #b32b76}
-.navbar-expand-lg .navbar-nav .nav-link    {padding-right: 1rem;}
+.navbar-expand-lg .navbar-nav .nav-link    {padding-right: 1.23rem;}
 .navbar-brand {white-space: wrap;}
 
 .breadcrumbs   {background-color: #e4e4e4; padding: 9px 0; font-size: 85%}
@@ -33,8 +33,7 @@ a:hover                { color: blue}
 .footer        {background-color: #e4e4e4; padding: 3em 0 1em;}
 .footer h2     {margin-bottom: 0}
 .footer .strap {font-style: italic;}
-.logos         {padding-top: 3em}
-.logos img     {max-height: 90px; padding: 0 50px}
+.logos img     {max-height: 90px; padding: 0 50px; margin-top: 3em}
 .cookies       {padding-top: 2em; text-align: right; font-size: 90%; font-style: italic}
   
 
@@ -46,9 +45,9 @@ a:hover                { color: blue}
 .banner p   {font-family: Arvo; font-size: 22px; color: #fff}
 #home .breadcrumbs {display: none;}
 
-.intro      {padding-top: 1.5em}
-.intro p    {font-family: Arvo; font-size: 24px; line-height: 36px; color: #18194f}
-.hilight    {color: #b32b76}
+.intro       {padding-top: 1.5em}
+.introtext p {font-family: Arvo; font-size: 20px; line-height: 36px; color: #18194f}
+.hilight     {font-size: 24px; color: #b32b76}
 
 .background {background-color: #efefef;}
 
@@ -69,7 +68,7 @@ tr                   {position: relative;}  /*for stretched links in results tab
 .card           {border: none; border-radius: 0}
 .city i         {padding-left: 5px;}
 .card-title     {font-family: Arvo; font-size: 24px; color: #18194f; text-align: left}
-.card-text      {text-align: left; font-size: 100%}
+.card .card-text      {text-align: left; font-size: 100%}
 .card-img-top   {max-height: 140px; width:auto; object-fit: cover; border-top-left-radius: 0; border-top-right-radius: 0}
 .card-body      {padding-bottom: 0.5rem; padding-bottom: 40px}
 .card-footer    {padding-top: 0; background-color: inherit; border-top: 0}
@@ -80,11 +79,11 @@ tr                   {position: relative;}  /*for stretched links in results tab
 .card-date          {font-size: 90%; font-style: italic; color: #666}
 .card i             {position: absolute; bottom: 10px; right: 10px;}
 
-.section             {min-height: 200px;}
+.section             {min-height: 140px;}
 .card-img-top        {height: 10px; object-fit: cover; border-radius: 0; }
 .section .card-title {font-size: 20px; line-height: 1.2}
 
-.page                {min-height: 140px;}
+.page                {min-height: 100px;}
 .page .card-body     {padding-bottom: 0}
 .page i              {font-size: 1.5em}
 .card-footer         {text-align: right; border-radius: 0; padding: 0 50px 6px;}
@@ -92,8 +91,14 @@ tr                   {position: relative;}  /*for stretched links in results tab
 .card a:hover        {text-decoration: none}
 
 
+
 @media (min-width: 992px) { 
-.navbar-brand {max-width: 250px}
+.navbar-brand                   {max-width: 270px}
+.navbar-light .navbar-brand     {font-size: 24px; }
+/* card heights */
+.home                           {min-height: 200px;}
+.section                        {min-height: 200px;}
+.page                           {min-height: 140px;}
  }
 
 

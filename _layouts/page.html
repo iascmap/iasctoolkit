@@ -5,8 +5,10 @@ layout: default
   {% assign sectionURL = 'governance-library' %}
 {% elsif page.section == "Reports and guidance" %}
   {% assign sectionURL = 'reports-and-legislation' %}
-{% else %}
+{% elsif page.section == "Resources" %}
   {% assign sectionURL = 'resources-library' %}
+{% else %}
+  {% assign sectionURL = 'uk-training-library' %}
 {% endif %}
 <div class="breadcrumbs">
   <div class="container">
